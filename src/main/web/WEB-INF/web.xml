@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+    <filter>
+        <filter-name>transactionFilter</filter-name>
+        <filter-class>com.zc.imperial.court.filter.TransactionFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>transactionFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <context-param>
+        <param-name>view-prefix</param-name>
+        <param-value>/WEB-INF/pages/</param-value>
+    </context-param>
+    <context-param>
+        <param-name>view-suffix</param-name>
+        <param-value>.html</param-value>
+    </context-param>
+</web-app>
