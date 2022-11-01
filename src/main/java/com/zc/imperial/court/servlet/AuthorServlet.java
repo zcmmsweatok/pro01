@@ -29,6 +29,7 @@ public class AuthorServlet extends ModelBaseServlet{
         //2.判断数据库中是否有该用户
         Emp emp=authorService.getUser(loginAccount,loginPassword);
         System.out.println(".......");
+        System.out.println(".......");
         //3.如果有，跳转到奏折展示页面
         if(emp!=null){
             //保存作用域
